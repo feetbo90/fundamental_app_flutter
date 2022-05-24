@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 import '../../model/article.dart';
+import '../../styles/styles.dart';
 import '../module_two/detail_page.dart';
 import '../../widget/platform_widget.dart';
 
