@@ -1,25 +1,86 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:fundamental_aplikasi_flutter/data/model/article.dart';
+
 import 'package:fundamental_aplikasi_flutter/screens/module_five/animation_page.dart';
 import 'package:fundamental_aplikasi_flutter/screens/module_four/calculator_page.dart';
 import 'package:fundamental_aplikasi_flutter/screens/module_seven/adaptive_page.dart';
 import 'package:fundamental_aplikasi_flutter/screens/module_seven/cupertino_home_app.dart';
+import 'package:fundamental_aplikasi_flutter/screens/module_seven/learning_cuppertion/article_detail_page.dart';
+import 'package:fundamental_aplikasi_flutter/screens/module_seven/learning_cuppertion/article_list_page.dart';
 import 'package:fundamental_aplikasi_flutter/screens/module_seven/learning_cuppertion/home_page.dart';
 import 'package:fundamental_aplikasi_flutter/screens/module_six/pixel_page.dart';
 import 'package:fundamental_aplikasi_flutter/screens/module_two/new_list_page.dart';
+import 'package:provider/provider.dart';
 
-import 'model/article.dart';
+import 'component/album_page.dart';
+// import 'model/article.dart';
 import 'screens/first_screen.dart';
 import 'screens/module_six/learning_path_page.dart';
+import 'screens/module_state/done_module_provider.dart';
+import 'screens/module_state/module_page.dart';
 import 'screens/module_three/my_home_page.dart';
 import 'screens/module_two/article_web_view.dart';
-import 'screens/module_two/detail_page.dart';
+// import 'screens/module_two/detail_page.dart';
 import 'styles/styles.dart';
 
 void main() {
   runApp(MyApp());
 }
 
+// class MyApp extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Fetch Data Example',
+//       theme: ThemeData(
+//         primarySwatch: Colors.blue,
+//       ),
+//       home: AlbumPage(),
+//     );
+//   }
+// }
+
+// class MyApp extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Aplikasi Localizations',
+//       localizationsDelegates: [
+//         // AppLocalizations.delegate,
+//         GlobalMaterialLocalizations.delegate,
+//         GlobalWidgetsLocalizations.delegate,
+//         GlobalCupertinoLocalizations.delegate,
+//       ],
+//       supportedLocales: [
+//         Locale('id', ''),
+//         Locale('en', ''),
+//       ],
+//       home: HomePage(),
+//     );
+//   }
+//
+// }
+
+// class MyApp extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return ChangeNotifierProvider(
+//       create: (context) => DoneModuleProvider(),
+//       child: MaterialApp(
+//         title: 'Flutter Demo',
+//         theme: ThemeData(
+//           primarySwatch: Colors.blue,
+//           visualDensity: VisualDensity.adaptivePlatformDensity,
+//         ),
+//         home: ModulePage(),
+//       ),
+//     );
+//   }
+// }
+
+// module 7
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
